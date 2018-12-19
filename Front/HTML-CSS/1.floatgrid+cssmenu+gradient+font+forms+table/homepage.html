@@ -1,0 +1,296 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width initial-scale=1"/>
+	<link rel="stylesheet" href="css/all.css" type="text/css"/>
+	<link rel="stylesheet" href="css/fonts.css" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<title>Главная</title>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header>
+			<div class="layout">
+				<div class="logo"></div>
+ <nav class="side">
+	<ul class="menu">
+        <li class="menu__list">
+        	<a href="#" id="top">В пункт 1</a>
+          <ul class="menu__drop">
+            <li><a href="#">Подпункт 1</a>
+                     <ul class="menu__drop2">
+                     	<li><a href="#">Значение 1</a></li>
+                     	<li><a href="#">Значение 2</a></li>
+                        </ul>
+                    </li> <!-- Подпункт 1 -->
+            <li><a href="#">Подпункт 2</a>
+            <ul class="menu__drop3">
+            		 <li><a href="#">Значение 1</a></li>
+                     <li><a href="#">Значение 2</a></li>
+                        </ul></li> <!-- Подпункт 2 -->
+          </ul> <!-- menu__drop -->
+        </li><!--  пункт 1 -->
+
+        <li class="menu__list">
+        	<a href="#">Задачи 2</a>
+          <ul class="menu__drop">
+            <li><a href="forms.html">Форма 1</a></li>
+            <li><a href="tables.html">Таблицы 2</a></li>
+          </ul>
+        </li> <!-- Пункт 2 -->
+
+        <li class="menu__list">
+        	<a href="#">Пункт 3</a>
+          <ul class="menu__drop">
+            <li><a href="#">Подпункт 1</a>
+             <ul class="menu__drop2">
+                <li><a href="#">Значение 1</a></li>
+                <li><a href="#">Значение 1</a></li>
+              </ul></li> <!-- Подпункт 1 -->
+          	</ul> <!--  menu__drop -->    
+          </li> <!-- Пункт 3 -->
+      </ul>
+				</nav>
+			</div>
+		</header>
+
+		<main class="row">
+			<section class="table_content row">
+
+			<h1><a href="#" id="head">Serif</a></h1>
+			<p>Я красивый шрифт с засечками Barkentina</p>
+			<span>Где я налажал (как думаю) - это прибивание инпутов гвоздями по ширине, т.к не использовал флексбокс и сделать нормальный адаптивный контейнер не успел( <br> Очень интересно насколько сейчас повсеместны гриды и флекс, т.к я учился верстать год назад. И непонятно актуальны ли сейчас все приколы с инлайн-блоками и флоатами. <br>Также пришлось много использовать селекторов для выравнивания отдельных элементов (зато впервые поверстал через perfect pixel).<br>Оберток дополнительных старался мимимум использовать. Со стилизацией select - отдельная история, я заигрался с кастомизацией вариантов из сети и понял, что ни один не будет кроссбраузерным( Кроме вариантов, где либо бекграунд заменяет картинка, либо модифицированный button\псевдоэлемент показывает стрелку, но делает часть инпута не кликабельной. <br>Я сделал для стрелки - span в котором лежит иконка fontawesome, подключенная по cdn, но это решение, увы, красиво только в хроме (в FF прыгают пиксели в размерах). И к сожалению пришлось юзать pos rel/absolute, что ломает в будущем на медиазапросах голову и настроение. <br>Надеюсь на этом этапе простительно так сделать, спасибо за отличный повод поскрипеть старыми знаниями! И угнаться в основы php, буду ждать фидбек) </span>
+	
+	
+	<table class="table_musalboms id="table">
+	  <thead>
+	    <tr>
+	      <th><a href="#" id="table">Albom</a></th>
+	      <th>Year</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td>Transmissions</td>
+	      <td>1993</td>
+	    </tr>
+	    <tr>
+	      <td>Luciana</td>
+	      <td>1994</td>
+	    </tr>
+	    <tr>
+	      <td>Beyond the Infinite</td>
+	      <td>1995</td>
+	    </tr>
+	    <tr>
+	      <td>Bible of Dreams</td>
+	      <td>1997</td>
+	    </tr>
+	    <tr>
+	      <td>Shango</td>
+	      <td>2000</td>
+	    </tr>
+	    <tr>
+	      <td>Labyrynth</td>
+	      <td>2004</td>
+	    </tr>
+	    <tr>
+	      <td>Gods & Monsters</td>
+	      <td>2008</td>
+	    </tr>
+	    <tr>
+	      <td>Inside The Reactor</td>
+	      <td>2011</td>
+	    </tr>
+	    <tr>
+	      <td>The Golden Sun of The Great East</td>
+	      <td>2013</td>
+	    </tr>
+	  </tbody>
+	</table>
+
+	<table class="table_fruits">
+	  <tbody>
+	    <tr>
+	      <td>Яблоки</td>
+	      <td rowspan="3" c>Апельсины</td>
+	      <td>Персики</td>
+	    </tr>
+	    <tr>
+	      <td>Бананы</td>
+	      <td rowspan="2">Ананасы</td>
+	    </tr>
+	    <tr>
+	      <td>Авокадо</td>
+	    </tr>
+	  </tbody>
+	</table>
+	
+	<table class="table_programTV">
+	  <thead>
+	    <tr>
+	      <th>7:00</th>
+	      <th>7:30</th>
+	      <th>8:00</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td colspan="3">Телеканал "Доброе Утро"</td>
+	    </tr>
+	    <tr>
+	      <td>Вести.ru</td>
+	      <td>Большой спорт</td>
+	      <td>Рейтинг Баженова</td>
+	    </tr>
+	    <tr>
+	      <td>Мультфильмы</td>
+	      <td colspan="2">Полезное утро</td>
+	    </tr>
+	  </tbody>
+	</table>
+		</section>
+
+			<section class="form_content">
+			<div class="content row">
+				<h1>Sans-Serif</h1>
+				<p>Я красивый шрифт без засечек Arsenal</p>
+				<p>У этого блока градиент задан при помощи генератора и в формате #####, вместо словесного обозначения цвета</p>
+			</div>	
+			<div class="sidebar_content row">
+				<div class="inner_sidebar__content">
+					<span>Сайдбар по содержимому main</span>
+						<ul class="items_framelist">
+							<li>List Item</li>
+							<li>List Item</li>
+							<li>List Item</li>
+						</ul>
+				</div>
+					</div>		
+
+	<div class="form_block row">
+	<h3>Форма заявки на работу в зоопарке</h3>
+	<p>Пожалуйста заполните форму. Обязательные поля помечены <span>*</span></p>
+
+	<form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm" class="form_workinzoo">
+<fieldset>
+  <legend>Контактная информация</legend>
+	<p>
+	<label>Имя<span> *</span>
+	<input type="text" name="customer_name" required>
+	</label> 
+	</p>
+
+	<p>
+	<label>Телефон 
+	<input type="tel" name="phone_number">
+	</label>
+	</p>
+
+	<p>
+	<label>Email<span> *</span>
+	<input type="email" name="email_address" required>
+	</label>
+	</p>
+</fieldset>
+<fieldset>
+  <legend>Персональная информация</legend>
+	<p>
+	<label>Возраст<span> *</span>
+	<input type="text" name="customer_name" required>
+	</label> 
+	</p>
+
+	<div>
+	<label>Пол</label>
+		<div class="select-wrapper">
+		<select name="pickup_gender">
+			<option value="women" selected="selected">Женщина</option>
+			<option value="men">Мужчина</option>
+			<span>1</span>
+		</select>
+		<span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+		</div>
+		</div>
+	
+	<p>
+	<label><span class="word-wrap">Перечислите личные качества</span> 
+	<textarea name="comments" maxlength="500" rows="10" cols="40"></textarea>
+	</label>
+	</p>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Выберите ваших любимых животных</legend>
+		<p>
+		<span><label>
+			<input type="checkbox" name="zebra" value="animal_zebra">Зебра</label></span>
+			<span><label>
+				<input type="checkbox" name="cat" value="animal_cat">Кошак</label></span>
+			<span><label>
+				<input type="checkbox" name="snake" value="animal_snake">Анаконда</label></span>
+			<span><label>
+				<input type="checkbox" name="human" value="animal_human">Человек</label></span>
+		</p>
+		<p>
+			<span><label>
+			<input type="checkbox" name="elephant" value="animal_elephant">Слон</label></span>
+			<span><label>
+				<input type="checkbox" name="antelope" value="animal_antelope">Антилопа</label></span>
+			<span><label>
+				<input type="checkbox" name="dove" value="animal_dove">Голубь</label></span>
+			<span><label>
+				<input type="checkbox" name="crab" value="animal_crab">Краб</label></span>
+		</p>
+  </fieldset>
+
+<p><button>Отправить информацию</button></p>
+
+	</form>
+
+	<!-- <div class="wrappergender">
+	<label for="select" class="select">
+    <input type="radio" name="list" value="not_changed" id="bg" checked />
+    <input type="radio" name="list" value="not_changed" id="select">
+    <label class="bg" for="bg"></label>
+    <div class="items">
+      <input type="radio" name="list" value="first_value" id="list[0]">
+      <label for="list[0]">First option</label>
+      <input type="radio" name="list" value="second_value" id="list[1]">
+      <label for="list[1]">Second loooooong option</label>
+      <span id="text">Select something...</span>
+    	</div>
+	</label> 
+</div> попытка настроить кастомный селект кроссбраузерно - в итоге либо нужно будет вешать событие на клик по псевдоэлементу, либо много морочиться с разными position-->
+
+   </div>
+ </section>
+	</div> <!-- wrapper -->
+		</main>
+
+		<footer class="footer">
+			<aside class="sidebar row">
+				<div class="inner_sidebar">
+					<span>Контент aside / сайдбар всего сайта</span>
+					<ul class="items_framelist">
+						<li><a href="#top">Вверх к 1му пункт меню</a></li>
+						<li><a href="#head">К заголовку с засечками</a></li>
+						<li><a href="#table">К таблицe c альбомами</a></li>
+					</ul>
+				</div>
+			</aside>
+		<div class="inner_footer row">
+			<span>Контакты</span>
+		</div>
+		<div class="inner_footer row">
+			<span>Элементы Футера 1 2 3</span>
+		</div>
+		</footer>
+	</div>
+</body>
+</html>

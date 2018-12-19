@@ -1,0 +1,16 @@
+<<<<<<< HEAD
+Изменения в dev
+Goodbye Git!
+
+change devdevdev 22222
+
+add linq
+change rebase commit 2222222
+change dev 4444
+
+=======
+Create conflict master
+Hello Git!
+
+add line
+>>>>>>> Создаем конфликт

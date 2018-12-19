@@ -1,0 +1,10 @@
+https://toster.ru/q/444672 
+Создание вероятности на php
+https://ru.stackoverflow.com/questions/233711/random-с-определенной-вероятностью-появления  
+(Random с определенной вероятностью появления)
+https://toster.ru/q/21186 
+Игровая механика: Шанс дропа определенной вещи — как?
+https://ru.stackoverflow.com/questions/780082/Рандом-по-массиву-с-шансами
+Рандом-по-массиву-с-шансами
+https://css-tricks.com/restart-css-animation/ 
+Рестарт анимации

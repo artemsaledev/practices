@@ -1,0 +1,547 @@
+/***************************************************              GENERAL RESET STYLES             ***************************************************/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+* {}
+*:focus {outline: none;}
+body {
+    line-height:1;
+	height: 100vh;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+    box-sizing: border-box;
+}
+nav ul {
+    list-style:none;
+}
+ol, ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+		text-decoration:none;
+}
+a:hover {
+	text-decoration:none;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+img {
+	border-style:none;
+	max-width:100%;
+}
+form fieldset {
+	margin:0;
+	padding:0;
+}
+input, textarea, select {
+	vertical-align:middle;
+	color:#000;
+	padding:0;
+}
+input, select {
+	vertical-align:middle;
+}
+input::-webkit-input-placeholder{color:#ebedec;}
+input:focus::-webkit-input-placeholder{color:#ebedec;}
+/*CCCCCCCCCCCCCCLLLLLLLLLLLLLLLLLEEEEEEEEEEAAAAAAAAAAARRRRRRR*/
+
+/* wrapper */
+.row:after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+body {
+	background: #b30d58;
+}
+
+div { box-sizing: border-box; }
+#wrapper {
+	display:block;
+	position:relative;
+	max-width:100%;
+	font-family: Arial, sans-serif;
+}
+.layout {
+	margin:0 auto;
+	padding: 40px;
+	position:relative;
+	background: linear-gradient(to top right, purple 10%, crimson 30%, orangered 50%, gold 75%);
+
+}
+footer {
+	display:block;
+	width:100%;
+	margin:0 0 0;
+	padding:0 0 0;
+}
+main {
+	display:block;
+	width:100%;
+	position: relative;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#81007f+10,d21243+30,f83d0a+50,fed700+100 */
+	background: #81007f; /* Old browsers */
+	background: -moz-linear-gradient(8deg, #81007f 10%,#df1837 30%,#ff5300 50%,#fed700 75%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(8deg, #81007f 10%,#df1837 30%,#ff5300 50%,#fed700 75%); /* Chrome10-25,Safari5.1-6 */
+	background:  linear-gradient(8deg, #81007f 10%,#df1837 30%,#ff5300 50%,#fed700 75%);/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81007f', endColorstr='#fed700',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+header {
+	width:100%;
+	display:block;
+	position:relative;
+}
+
+header, #wrapper {
+	margin-bottom: 10px;	
+}
+
+.menu a {
+  padding: 15px;
+  background: #b30d58;
+  border-bottom: 2px solid #fed700;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.menu a:hover{
+  padding: 10px 25px 10px 20px;
+  background: #800080;
+  border-radius: 10px 10px 0px 0px;
+  text-decoration: underline; 
+}
+
+.menu li:first-child a, 
+.menu li .menu__drop li:first-child a{
+  border-radius: 3px 3px 0 0;
+}
+
+.menu li:last-child a, 
+.menu li .menu__drop li:last-child a{
+  border-radius:0 0 3px 3px;
+}
+
+.menu li:last-child a:hover {
+	border-radius: 0 50px 50px 0; 
+	}
+.menu li:first-child a:hover {
+	border-radius: 50px 0 0 50px; 
+	}		
+
+.menu li .menu__drop li a{
+  border-radius: 0;
+  border-bottom: 3px solid #ffffff;
+}
+.menu li { 
+	width: 186px; height: 56px; 
+	margin-right: 45px;
+	list-style: none;
+}
+
+
+.menu__list{
+  position: relative;
+  z-index: 2;
+}
+
+.menu__drop{
+  position: absolute;
+  top: -1000px;
+  width: 100%;
+  margin-top: 30%;
+  opacity: 0;
+  border-left: 10px solid transparent;
+  -webkit-transition: 0.5s opacity;
+  transition: 0.5s opacity;
+}
+
+.menu__list:hover .menu__drop{
+  opacity: 1;
+  top: 0;
+}
+/*новый уровен*/
+
+.menu__drop2 {
+  position: absolute;
+  width: 100%;
+  left: 100%;
+  opacity: 0;
+  border-left: 10px solid transparent;
+  -webkit-transition: 0.5s opacity;
+  transition: 0.5s opacity;
+}
+
+.menu__drop>li:hover .menu__drop2{
+  opacity: 1;
+  top: 0;
+}
+/*новый уровен закончен*/
+.menu__drop3 {
+  position: absolute;
+  width: 100%;
+  left: 100%;
+  margin-top: 25%;
+  opacity: 0;
+  border-left: 10px solid transparent;
+  -webkit-transition: 0.5s opacity;
+  transition: 0.5s opacity;
+}
+
+.menu__drop>li:hover .menu__drop3{
+  opacity: 1;
+  top: 0;
+}
+
+
+.menu__list::after{
+  content: " ";
+  position: absolute;
+  border: 5px solid;
+  border-color: transparent transparent transparent #eee;
+  top: 0.3em;
+  right: 2em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu__list:hover::after{
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+/*
+выравниваем кросс браузерно меню*/
+.side ul {
+		text-align: center;
+        /* Обнуляем для родителя*/
+        line-height: 0;
+        font-size: 1px; /* 1px для Opera */
+
+        /* Лекарство для IE6-7*/
+        text-justify: newspaper;
+        zoom:1;
+
+        /* Включаем в работу последнюю строку*/
+        text-align-last: justify;
+    }
+       .side ul:after {
+                        width: 100%;
+                        height: 0px;
+                        visibility: hidden;
+                        overflow: hidden;
+                        content: '';
+                        display: inline-block;
+
+        }
+               .side ul li  {
+               			display: inline-block;
+                        text-align: left;
+
+                        /* Востанавливаем у потомков, кроме последнего*/
+                        line-height: normal;
+                        font-size: 20px;
+
+                        /* Без него в Opera будет отступ под элементами */
+                        vertical-align: top;
+
+                        /* эмуляция inline-block для IE6-7*/
+                        //display : inline;
+                        //zoom : 1;
+                }
+
+.content {
+	padding: 50px;
+	width: 70%;
+	float: left;
+	font: bold 24px/2.5 'Arsenal', sans-serif;
+	text-align: left;
+
+}
+.table_content p,h1 {
+		font: bold 24px/2.5 'Barkentina', serif;
+		text-align: center;
+}
+.table_content span {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 40px;
+  line-height: 1.5;
+}
+
+.table_musalboms, .table_fruits, .table_programTV {
+  float: left;
+  width: 200px;
+  margin: 10px 20px;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 1px;
+  border-color: #ffcc00;
+  border-style: solid;
+  color: #000000;
+}
+.table_fruits tbody>tr>td:nth-child(2) {
+	vertical-align: middle;
+}
+
+.table_musalboms td, .table_musalboms th, 
+.table_fruits td, .table_fruits th, .table_programTV td, 
+.table_programTV th {
+  border-width: 1px;
+  border-color: #ffcc00;
+  border-style: solid;
+  padding: 3px;
+}
+
+.table_musalboms thead, .table_fruits thead, .table_programTV thead {
+  background-color: #c8104b;
+}
+
+.sidebar_content { 
+	width: 30%;
+	float: right;
+}
+
+.inner_sidebar__content {
+	color: #fed700;
+    background: #81007f;
+    border: 4px double #fed700;
+	min-height: 100px;
+	padding: 15px;
+}
+.sidebar {
+	width: 70%;
+	float: left;
+}
+.items_framelist {
+	list-style-image: url("../images/information_frame.png");
+	padding: 10px 40px;
+	color: white;
+	font-size: 18px;
+}
+.inner_sidebar {		
+	color: #000000;
+    font-size: 32px;
+	background: linear-gradient(to bottom left, purple 10%, crimson 30%, orangered 50%, gold 75%);
+	min-height: 100px;
+	padding: 15px;
+}
+.form_block {
+	float: left;
+	width: 100%;
+	padding: 0 100px;
+}
+
+.form_block>p, .form_block>h3, .form_block>span,
+.form_block legend,.form_block label {
+	font-family: 'Barkentina', serif;
+}
+.form_block>h3 {
+	font-size: 36px;
+	line-height: 1.5;
+}
+.form_block>p {
+	font-style: italic;
+	margin: 0 0 20px;
+}
+.form_block>p>span {
+	color: gold; 
+}
+form > fieldset > p > label > span {color: yellow;}
+.form_block legend {
+    font-size: 18px;
+    letter-spacing: 0.05px;
+  }
+.form_block label {
+	margin-left: 5px;
+    font-size: 17px;
+    line-height: 2;
+   }
+
+.form_workinzoo {
+max-width: 596px;
+}
+
+.form_workinzoo p {
+	text-align: left;
+}
+
+.form_workinzoo fieldset {
+	padding: 15px 0px 5px 12px;
+	margin: 19px 0 0px;
+}
+
+form > fieldset:nth-child(1) input,form > fieldset:nth-child(2) input {
+    width: 246px;
+    margin-right: 35.1%;
+    padding: 2px;
+    border: 1px solid gray;
+    float: right;
+}
+  
+/*.wrappergender {
+	margin: 0 0 0 84px;
+}
+.wrappergender > label {
+  margin-left: -81px;
+}
+.select-wrappergender > select {
+  float: none;
+  position: absolute;
+  margin: 0 auto;
+}
+
+
+.select-wrappergender:after {
+  content: ">";
+    display: inline-block;
+    background: white;
+    position: relative;
+    right: -231px;
+    top: -4px;
+    z-index: 2;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 26px;
+    border: 2px solid #ddd;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+*/
+.select-wrapper {
+    display: inline-block;
+    position: relative;
+    top: -8px;
+    left: 3px;
+}
+.select-wrapper span {
+  -ms-display:none;
+    text-align: center;
+    background: #e4e4e4;
+    border: 1px solid #c5b7b7b3;
+    z-index: 100000000;
+    position: absolute;
+    right: 0px;
+    width: 20px;
+    height: 17px;
+    top: 0.5px;
+   -moz-width: 22px!important;
+    -moz-height: 22px;
+    -moz-top: 2.5px;
+}
+form > fieldset:nth-child(2) > div > label {
+  margin-right: 84px;
+}
+form > fieldset:nth-child(2) > p:nth-child(4) {
+  margin: 0px 0 -27px;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 250px;
+    padding: 2px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+textarea {
+    max-width: 250px;
+    height: 106px;
+    margin: -1px 0px 34px 0px;
+}
+
+.word-wrap {
+	display: inline-block;
+    max-width: 112px!important;
+    overflow: hidden;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.25;
+    margin: 0 5px 5px -2px;
+    color: white;
+}
+
+form  button {
+    padding: 6px;
+    width: 168px;
+    height: 38px;
+    margin: 21px 0;
+    font-size: 13px;
+  }
+form > fieldset:nth-child(3) > p > span:nth-child(1) > label > input[type="checkbox"] {
+  margin: -9px 7px 0 2px;
+} 
+form > fieldset:nth-child(3) > p:nth-child(2) > span:nth-child(2) > label > input[type="checkbox"] {
+  margin: -9px 4px 0 0px;
+}
+form > fieldset:nth-child(3) > p:nth-child(3) > span:nth-child(2) > label > input[type="checkbox"],
+form > fieldset:nth-child(3) > p:nth-child(2) > span:nth-child(3) > label > input[type="checkbox"] {
+  margin: -9px 7px 0 3px;
+}
+form > fieldset:nth-child(3) > p:nth-child(2) > span:nth-child(4) > label > input[type="checkbox"] {
+  margin: -9px 7px 0 1px;
+}
+form > fieldset:nth-child(3) > p:nth-child(3) > span:nth-child(3) > label > input[type="checkbox"] {
+  margin: -10px 6px 0 4px;
+}
+form > fieldset:nth-child(3) > p:nth-child(3) > span:nth-child(4) > label > input[type="checkbox"] {
+  margin: -10px 6px 0 1px;
+}
+
+
+form > fieldset:nth-child(3) > p > span:nth-child(2) {
+  margin: 0 0 0px 56px;
+}
+form > fieldset:nth-child(3) > p > span:nth-child(3) {
+  margin: 0 0 0px 47px;
+}
+form > fieldset:nth-child(3) > p:nth-child(3) > span:nth-child(3) {
+  margin: 0 0 0px 21px;
+}
+form > fieldset:nth-child(3) > p:nth-child(3) > span:nth-child(4) {
+  margin: 0 0 0px 47px; 
+}
+form > fieldset:nth-child(3) > p:nth-child(2) > span:nth-child(4) {
+  margin: 0 0 0px 27px; 
+}
+
+
+.inner_footer {
+	width: 30%;
+    float: right;
+    padding: 15px;
+    background: gold;
+    height: 50px;
+}

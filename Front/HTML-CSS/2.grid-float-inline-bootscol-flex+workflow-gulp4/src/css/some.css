@@ -1,0 +1,151 @@
+@media screen and (max-width: 1024px) {
+	html{
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	html{
+		color: green;
+	}
+}
+
+.wrapper {
+	max-width: 1280px;
+	padding: 0 15px;
+	margin: 0 auto;	
+	border: 1px solid red;
+}
+.row {
+	margin: 0 -15px;
+	background: red;
+	display: flex;
+	flex-wrap: wrap;
+	/*align-items: center;*/
+	/*text-align: center;*/
+}
+
+/*.row::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.wrapper .col:nth-child(4) {
+	clear: both;
+}*/
+
+.wrapper .col { 
+	text-align: center;
+	background: #343543;
+	min-height: 100px;
+
+	margin: 15px;
+	/*display: inline-block;*/
+	/*vertical-align: top;*/
+	/*float: left;*/
+	/*width: calc((100%/6) - 30px);*/
+}
+
+/*.col {
+	margin: 0 15px;
+}*/ 
+
+/* Example */ 
+/* @font-face {
+    font-family: 'Corbel';
+    src: url('../fonts/Corbel.eot');
+    src: url('../fonts/Corbel.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Corbel.woff') format('woff'),
+         url('../fonts/Corbel.ttf') format('truetype'),
+         url('../fonts/Corbel.svg#Corbel') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+/*@media (min-width: 1921px){
+
+	} 	QHD \ UHD
+@media (min-width: 1600px) and (max-width: 1919px) {
+
+	}	HD +
+@media (min-width: 1440px) and (max-width: 1599px) {
+
+	}	macbook
+@media (min-width: 1360px) and (max-width: 1439px) {
+
+	}	HD
+@media (min-width: 1280px) and (max-width: 1359px) {
+	
+	} IPAD2*/
+/* @media (min-width: 1024px) and (max-width: 1279px) {
+	
+	} IPAD
+@media (min-width: 896px) and (max-width: 1023px) {
+
+	}	Ip Xs max horizontal
+@media (min-width: 812px) and (max-width: 895px) {
+
+	}		Ip Xs horizontal
+@media (min-width: 768px) and (max-width: 811px) {
+
+	}		Tablet
+@media (min-width: 736px) and (max-width: 767px) {
+
+	}		Ip 6,7,8 Plus horizontal
+@media (min-width: 667px) and (max-width: 735px) {
+
+	}		Ip 6,7,8 horizontal
+@media (min-width: 568px) and (max-width: 666px) {
+
+	}		Ip 5 horizontal
+@media (min-width: 480px) and (max-width: 567px) {
+
+	}		Ip 4 horizontal
+@media (min-width: 414px) and (max-width: 479px) {
+
+	}		Ip 6,7,8
+@media (min-width: 320px) and (max-width: 413px) {
+
+	}		Ip 4,5 */
+
+
+input::-webkit-input-placeholder{color:#ebedec;}
+input:focus::-webkit-input-placeholder{color:#ebedec;}
+
+.col-1,.col-md-1,.col-sm-1 {
+	width: calc(8.333333333% - 30px);
+}
+.col-2,.col-md-2,.col-sm-2 {
+	width: calc(16.66667% - 30px);
+}
+.col-3,.col-md-3,.col-sm-3 {
+	width: calc(25% - 30px);
+}
+.col-4,.col-md-4,.col-sm-4 {
+	width: calc(33.333333% - 30px);
+}
+.col-5,.col-md-5,.col-sm-5 {
+	width: calc(41.66667% - 30px);
+}
+.col-6,.col-md-6,.col-sm-6 {
+	width: calc(50% - 30px);
+}
+.col-7,.col-md-7,.col-sm-7 {
+	width: calc(58.333333% - 30px);
+}
+.col-8,.col-md-8,.col-sm-8 {
+	width: calc(66.66667% - 30px);
+}
+.col-9,.col-md-9,.col-sm-9 {
+	width: calc(75% - 30px);
+}
+.col-10,.col-md-10,.col-sm-10 {
+	width: calc(83.333333% - 30px);
+}
+.col-11,.col-md-11,.col-sm-11 {
+	width: calc(91.666667% - 30px);
+}
+.col-12,.col-md-12,.col-sm-12 {
+	width: calc(100% - 30px);
+}

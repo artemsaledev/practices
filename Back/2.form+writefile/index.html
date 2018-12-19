@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Forma</title>
+</head>
+<body>
+	<form action="./write.php" class="formtest" method="post" >
+<fieldset>
+  <legend>Контактная информация</legend>
+	<p>
+	<label>Имя
+	<input type="text" name="customer_name" required>
+	</label> 
+	</p>
+
+	<p>
+	<label>Телефон 
+	<input type="tel" name="phone_number">
+	</label>
+	</p>
+
+	<p>
+	<label>Email 
+	<input type="email" name="email_adress" required>
+	</label>
+	</p>
+
+	<p>
+	<label>Перечислите личные качества : <br> 
+	<textarea name="comments" maxlength="500" rows="10" cols="40"></textarea>
+	</label>
+	</p>
+
+	<button type="submit">Send</button>
+</form>
+	
+</body>
+</html>
