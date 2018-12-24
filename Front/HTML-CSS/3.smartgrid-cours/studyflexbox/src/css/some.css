@@ -1,22 +1,13 @@
-/*@media screen and (max-width: 1024px) {
-	html{
-		font-size: 24px;
-	}
-}
-
-@media screen and (max-width: 800px) {
-	html{
-		color: green;
-	}
-}*/
-
 body {background: orange;}
+
+img {max-width: 100%;}
 
 .wrapper {
 	max-width: 1280px;
 	padding: 0 15px;
 	margin: 0 auto;	
 	border: 6px solid #010101;
+	background: burlywood;
 	overflow: hidden;
 }
 .row {
@@ -37,6 +28,7 @@ body {background: orange;}
 	margin: 15px;
 	padding: 15px;
 	border: 2px dotted white;
+	border-radius: 15px;
 	color: white;
 }
 
@@ -70,9 +62,54 @@ body {background: orange;}
 }
 
 .sectionImage img {
-	width: 100%;
+	min-width: 100%;
 }
 .title {
 	text-align: center;
 	padding: 10px;
+}
+
+.row-gal_reverse {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	padding: 30px;
+	background: brown;
+}
+
+.block_revImage {
+	display: flex;
+	flex-wrap: wrap;
+	flex: 1 1 440px;
+	box-sizing: border-box;
+	margin: 5px;
+	background: pink;
+	border: 2px solid blue;
+}
+
+.section_reverseImg > img {min-width: 100%;}
+
+.section_reverseImg {
+	 flex: 1 1 100px;
+	 padding: 10px;
+     align-self: center;
+}
+
+.block_revImage .title {
+	text-align: left;
+	font-style: italic;
+	flex: 3 1 290px;
+	margin: 0 5px;
+}
+
+@media screen and (max-width: 1024px) {
+	html{
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 840px) {
+	.block_revImage:nth-child(even) {
+		flex-direction: row-reverse;
+	}
 }
