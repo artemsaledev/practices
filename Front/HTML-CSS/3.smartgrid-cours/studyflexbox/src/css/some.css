@@ -87,13 +87,14 @@ img {max-width: 100%;}
 	border: 2px solid blue;
 }
 
-.section_reverseImg > img {min-width: 100%;}
 
 .section_reverseImg {
 	 flex: 1 1 100px;
 	 padding: 10px;
      align-self: center;
 }
+
+.section_reverseImg > img {min-width: 100%;}
 
 .block_revImage .title {
 	text-align: left;
