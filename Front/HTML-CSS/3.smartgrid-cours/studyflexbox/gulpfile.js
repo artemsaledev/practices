@@ -5,15 +5,14 @@ const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
 const del = require('del');
 const browserSync = require('browser-sync').create();
+const sourcemaps = require('gulp-sourcemaps');
+const gcmq = require('gulp-group-css-media-queries');
 
 const cssFiles = [
 	'./src/css/some.css',
-	'./node_modules/normalize.css/normalize.css'
+	'./node_modules/normalize.css/normalize.css',
+	'./src/css/**/*.css'
 ];
-// const jsFiles = [
-// 	'./src/js/lib.js',
-// 	'./src/js/script.js'
-// ];
 
 function styles() {
 	//return gulp.src('./src/css/**/*.css')
@@ -23,33 +22,23 @@ function styles() {
             browsers: ['>0.1%'],
             cascade: false
         }))
+		.pipe(gcmq())
+		.pipe(sourcemaps.init())
         .pipe(cleanCSS({
         	level: 2
         }))
+        .pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('./build/css'))
 		.pipe(browserSync.stream());
-		// .pipe();
 }
-// function script() {
-// 	return gulp.src(jsFiles)
-// 			.pipe(concat('all.js'))
-// 			.pipe(uglify({
-//         	toplevel: true
-//         	}))
-// 			.pipe(gulp.dest('./build/js'))
-// 			.pipe(browserSync.stream());
-// 			// .pipe();		
-// }
 
 function watch() {
 	browserSync.init({
         server: {
             baseDir: "./"
         }
-        //tunnel: true
     });
 	gulp.watch('./src/css/**/*.css', styles)
-	// gulp.watch('./src/js/**/*.js', script)
 	gulp.watch("./*.html").on('change', browserSync.reload);﻿
 }
 
@@ -58,12 +47,10 @@ function clean() {
 }
 
 gulp.task('styles', styles);
-// gulp.task('script', script);
 gulp.task('clean', clean);
 gulp.task('watch', watch);
 
 gulp.task('build', gulp.series(clean,
-	// gulp.parallel(styles, script)
 	gulp.parallel(styles)
 	));
 
