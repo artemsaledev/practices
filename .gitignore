@@ -1,8 +1,9 @@
 <<<<<<< HEAD
 .idea/
 /Front/node_modules
-/Front/HTML-CSS/2.grid-variants+workflow-gulp4/node_modules
+/Front/HTML-CSS/2.grid-variants+simpleworkflow-gulp4/node_modules/
 /Front/HTML-CSS/3.smartgrid-cours/studyflexbox/node_modules
+/Front/HTML-CSS/3.smartgrid-cours/studyprepros/node_modules
 =======
 .idea/
 >>>>>>> 5c755035cb7dba36c0f3beff831c91fabaf4a20a

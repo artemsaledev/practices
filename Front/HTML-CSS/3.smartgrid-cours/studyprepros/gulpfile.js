@@ -7,24 +7,27 @@ const del = require('del');
 const browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
 const gcmq = require('gulp-group-css-media-queries');
-// const prepros = require('gulp-less');
+const prepros = require('gulp-less');
 
-const cssFiles = [
-	'./src/css/some.css',
-	'./node_modules/normalize.css/normalize.css',
-	'./src/css/**/*.css',
-	// './src/less/**/*.less'
-];
+const config = {
+    src: './src',
+    css: {
+        watch: '/precss/**/*.less',
+        src: '/precss/styles.less',
+        dest: '/css'
+    },
+    html: {
+        src: './index.html'
+    }
+};
 
-// const lessFiles = [
-// 	'./src/less/**/*.less'
-// ];
 
 function styles() {
-	//return gulp.src('./src/css/**/*.css')
-	return gulp.src(cssFiles)
+  return gulp.src(config.src + config.css.src)
 		.pipe(concat('all.css'))
 		.pipe(sourcemaps.init())
+     	.pipe(prepros())
+		.pipe(gcmq())
 		.pipe(autoprefixer({
             browsers: ['>0.1%'],
             cascade: false
@@ -32,9 +35,8 @@ function styles() {
         .pipe(cleanCSS({
         	level: 2
         }))
-		.pipe(gcmq())
-        .pipe(sourcemaps.write('.'))
-		.pipe(gulp.dest('./build/css'))
+     	.pipe(sourcemaps.write('.'))
+		.pipe(gulp.dest(config.src + config.css.dest))
 		.pipe(browserSync.stream());
 }
 
@@ -44,12 +46,12 @@ function watch() {
             baseDir: "./"
         }
     });
-	gulp.watch('./src/css/**/*.css', styles)
-	gulp.watch("./*.html").on('change', browserSync.reload);﻿
+	gulp.watch(config.src + config.css.watch, styles)
+	gulp.watch(config.src + config.html.src).on('change', browserSync.reload);﻿
 }
 
 function clean() {
-	return del(['build/*'])
+	return del(['/css*'])
 }
 
 gulp.task('styles', styles);
